@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    header {
+      background: url(https://images.pexels.com/photos/12805817/pexels-photo-12805817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;  
+    }
+
+    
+    .nav {
+      display: flex;
+      padding: 20px;
+    
+
+    }
+
+
+    .nav li {
+
+      padding: 35px;
+      list-style: none;
+
+
+    }
+
+   .nav li a {
+      position: relative;
+      text-decoration: none;
+      font-weight: 500;
+      color: white;
+      left:35pc;
+      
+    }
+
+footer a{
+  text-decoration: none;
+}
+
+    #sell {
+
+      border: none;
+
+    }
+
+  
+    .content h1 {
+      font-size: 50px;
+      color: gold;
+      padding:10pc;
+      width:60pc;
+    
+    }
+
+.section1 {
+
+width:80pc;
+}
+    .section1 h1 {
+      color: rgb(2, 39, 2);
+      padding: 50px;
+      width:50pc;
+      font-size: 50px;
+    }
+
+    .section1 h3 {
+      font-size: 20px;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      margin-left: 50px;
+      width:50pc;
+
+    }
+
+    .section2 {
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .section2 img {
+      width: 400px;
+      height: 100%;
+      border-radius: 10px;
+      transition: 1s ease-in-out;
+    }
+
+
+    .sec2 p {
+      color: white;
+      position: relative;
+      text-align: center;
+      font-weight: 600;
+      bottom: 50px;
+
+    }
+
+    .sec2 img:hover {
+      transform: scale(1.1);
+    }
+
+    .section3 {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      width: 50pc;
+    }
+
+    .section3 h5 {
+      font-weight: 400;
+      width: 500px;
+      text-align: justify;
+      line-height: 30px;
+
+    }
+
+    .secimg3 img {
+      position: relative;
+      left: 10pc;
+      width: 500px;
+      height: 100%;
+    }
+
+    .sidenav {
+      border: 1px solid black;
+      border-radius: 15px;
+      width: 400px;
+      padding: 1pc;
+      line-height: 4pc;
+    }
+
+    .sidenav img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+
+
+    .section4 {
+      display: flex;
+      justify-content: space-between;
+      padding: 2pc;
+      width: 75pc;
+
+    }
+
+
+
+    .section4 input {
+      border-radius: 15px;
+      width: 25pc;
+      box-shadow: 2px 3px 3px 2px wheat;
+      background-color: white;
+      padding: 8px;
+
+    }
+
+
+
+    .section4 .sec5 {
+
+      text-align: justify;
+      font-size: px;
+      margin-top: 40px;
+
+    }
+
+    .section4 .sec5 p,h4 {
+      width: 40pc;
+      padding: 1pc;
+
+    }
+
+
+
+
+    .parent {
+      width:70pc;
+      margin-top: 8pc;
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+
+    .section5 {
+
+border: 1px solid black;
+width: 25pc;
+padding: 1pc;
+margin: 2pc;
+border-radius: 15px;
+}
+
+
+    .section5 .down1 {
+      background-color: black;
+      margin-top: 20px;
+      color: white;
+      padding: 15px;
+      text-align: left;
+      border-radius: 20px;
+
+    }
+
+
+    .down1 .span1 {
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+
+
+    .span1 p {
+
+      border: 1px solid black;
+      background-color: white;
+      padding: 10px;
+      border-radius: 15px;
+      color: black;
+    }
+
+    .span1>p:hover {
+      border: 1px solid white;
+      background-color: blue;
+      font-weight: 500;
+
+    }
+
+    .down1 .downpara {
+      padding: 10px;
+    }
+
+    .down1 .span2 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      border: 1px solid white;
+      border-radius: 20px;
+      line-height: 20px;
+    }
+
+    .down1 .span2>i,
+    p {
+      margin-top: 20px;
+    }
+
+    .productpage2 {
+
+      margin-top: 2pc;
+      margin-left: 15px;
+    }
+
+    .productpage2 h5 {
+      text-align: justify;
+      width: 500px;
+      line-height: 33px;
+      font-weight: 400;
+    }
+
+    .section6 {
+      display: flex;
+      padding: 2pc;
+    }
+
+
+    .section6 .map1 img {
+      width: 80%;
+      border: 1px solid orange;
+      border-radius: 20px;
+
+    }
+
+    .section6 .map2 img {
+      width: 54%;
+      border: 1px solid orange;
+      border-radius: 20px;
+    }
+
+    .section7{
+      width:50pc
+    }
+
+    .configuration {
+      padding: 2pc;
+       
+    }
+
+    .section7 .configuration h5 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 35px;
+
+    }
+
+    .section7 .configuration p{
+      font-size: 3rem;
+    }
+
+    
+.model{
+padding: 2pc;
+}
+
+    .section8 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .section8 img {
+      width: 80px;
+  
+    }
+
+    .section8 h6 {
+      font-weight: 400;
+      line-height: 30px;
+
+    }
+
+    .section8 p{
+    width:25pc;
+    line-height: 25px;
+    }
+
+
+    
+    .section9 {
+
+      padding: 2pc;
+    }
+
+    .section9 .trust {
+      line-height: 20px;
+
+    }
+
+    .section9 h4 {
+      font-weight: 400;
+    }
+
+    .section9 img {
+      width: 80pc;
+      height: 30pc;
+      border-radius: 25px;
+
+
+    }
+
+    .section10 {
+      
+      padding: 2pc;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .section10 h5 {
+      font-weight: 400;
+      line-height: 25px;
+      width:40pc;
+      text-align: justify;
+    }
+
+    .section10 img {
+      width: 561px;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+
+    .section11 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:75pc;
+      padding: 2pc;
+    }
+
+.section11 .built1 h2{
+  font-size: 40px;
+  width:55pc;
+ 
+}
+    .section11 h5 {
+      text-align: justify;
+      font-weight: 400;
+      font-size: 20px;
+      width: 30pc;
+      line-height: 30px;
+    }
+
+    .section11 button {
+
+      background-color: green;
+      color: white;
+      font-size: 16px;
+      padding: 13px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px 2px black;
+      position: relative;
+      right: 10pc;
+    }
+
+    .section11 button:focus {
+      color: white;
+      background-color: rgb(2, 2, 27);
+    }
+
+    footer {
+      padding: 2pc;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    footer li {
+      list-style: none;
+    }
+
+    footer li a {
+      color: black;
+      font-weight: lighter;
+      line-height: 3pc;
+    }
+
+  
+    @media(max-width:600px) {
+
+      header {
+        width:100pc
+      }
+
+      .section1 {
+        width:100pc;
+      }
+
+
+
+      .section1 h1 {
+        width: 100pc;
+
+      }
+
+      .section1 h3 {
+        font-size: 40px;
+        text-align: justify;
+        line-height: 50px;
+        width:90pc;
+      }
+
+      .section2 {
+        width:100pc;
+        flex-direction: column;
+        padding: 8pc;
+       
+      }
+
+      .section2 .sec2 img {
+        width: 80pc;
+        border-radius: 20px;
+       
+      }
+
+      .section3 {
+        flex-direction: column;
+        width: 100pc;
+      }
+
+      .section3 .sec3 {
+        line-height: 90px;
+      }
+
+      .section3 .sec3 h1 {
+
+        font-size: 50px;
+        width: 80pc;
+      }
+
+      .sec3 h5 {
+        margin-top: 30px;
+        line-height: 80px;
+        font-size: 40px;
+        text-align: justify;
+        width: 90pc;
+      }
+
+      .section3 .secimg3 img {
+        width: 90pc;
+      }
+
+
+      .section4 {
+        flex-direction: column;
+        width: 100pc;
+      }
+
+     
+      .section4 .sec4 h5 {
+        font-size: 50px;
+        width: 90pc;
+      }
+
+      .section4 .sec4 input {
+        width: 70pc;
+        height: 5pc;
+        line-height: 2pc;
+      }
+
+      .section4 .sidenav {
+        width: 80pc;
+        margin-top:10px;
+      }
+
+      .section4 h6 {
+        font-size: 2pc;
+      }
+
+      .section4 span {
+        font-size:1pc;
+      }
+
+      .section4 p {
+        font-size: 2pc;
+      }
+
+      .section4 .sec5 h4 {
+        font-size: 3pc;
+        line-height: 50px;
+      }
+
+      .section4 .sec5 p {
+        width: 85pc;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      .section5{
+        width:80pc;
+      }
+      .parent {
+        flex-direction: column;
+        width: 50pc;
+        padding: 1pc;
+      }
+
+
+      .parent .productpage1,
+      .productpage2 {
+        padding: 1.5pc;
+      
+      }
+
+
+      
+      .parent .productpage2 h1 {
+        width: 40pc;
+        font-size: 2.5pc;
+
+      }
+
+      .parent .productpage2 h5 {
+        width: 90pc;
+        text-align: justify;
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      .section6 {
+        width: 100pc;
+        flex-direction: column;
+        padding: 3pc;
+
+      }
+
+      .section6 .map1 {
+
+        margin-bottom: 3pc;
+      }
+
+      .section6 .map1 img {
+        height: 1100px;
+
+      }
+
+
+      .section6 .map2 img {
+        width: 45pc;
+        height: 80pc;
+
+      }
+      .section7 {
+        width: 100pc;
+      }
+
+      .section7 .configuration h5 {
+        width:80pc;
+        font-size:40px;
+        line-height: 60px;
+        text-align: justify;
+      }
+
+   
+
+      .section8{
+        width:100pc;
+        flex-direction: column;
+      }
+
+      .model {
+        padding: 2pc;
+        font-size: 2.5rem;
+        width:60pc;
+      }
+
+      .section8 h3{
+      
+        font-size:55px;
+        margin-top:30px;
+
+      }
+
+      .section8  p{
+        width: 90pc;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: justify;
+
+        
+
+      }
+
+      .section8 h3,p{
+        padding: 20px;
+      }
+
+
+
+      .section8 .Unique1,.Unique2,.Unique3{
+        border:1px dashed black;
+        margin-bottom:40px;
+        padding: 18px;
+      }
+
+      .section8 > img{
+        width:50px;
+      }
+
+      .section9 {
+      width:100pc;
+      padding: 2pc;
+    }
+
+    .section9 h1{
+      font-size: 60px;
+      width:70pc;
+      line-height: 5pc;
+    }
+
+    .section9 h4{
+      font-size:40px;
+      line-height: 60px;
+      width:100pc;
+      margin-bottom: 3pc;
+    }
+    .section9 img{
+      width:90pc;
+      height:50pc;
+    }
+
+    .section10 
+    {
+      flex-direction: column;
+      width:100pc;
+    }
+
+.section10 .invest1{
+
+margin-bottom: 30px;
+
+}
+
+
+
+
+.section10  h1{
+width:90pc;
+font-size: 60px;
+}
+
+.section10  h5
+{
+width:90pc;
+font-size: 40px;
+line-height: 60px;
+}
+
+
+.section10 .invest2 img
+{
+  width:90pc;
+}
+
+
+.section11  {
+
+ 
+  padding: 2pc;
+  flex-direction: column;
+}
+
+
+.section11 .built1 h2{
+  width:80pc;
+  font-size: 60px;
+}
+
+.section11 .built1 h5{
+  width:80pc;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+
+.section11 .built2 {
+  padding-left: 10pc;
+}
+
+.section11 button{
+  padding: 1.5pc;
+  font-size: 2pc;
+}
+
+.section12{
+  padding: 1.5pc;
+  width:90pc;
+}
+
+.section12 h3{
+  width:50pc;
+  line-height: 3pc;
+}
+
+footer{
+  flex-direction:column;
+  width:100pc;
+  align-items: flex-start;
+    
+}
+
+footer div p{
+  font-size: 40px;
+}
+footer div a{
+
+font-size: 3pc;
+font-weight: 300;
+line-height: 6pc;
+}
+
+
+footer .address para1{
+  font-size:3pc;
+}
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <header>
+    <div class="nav">
+
+
+      <li><a href="home.html" id="sell">Sell</a></li>
+      <li><a href="execute.html">Execute</a></li>
+      <li><a href="manage.html">Manage</a></li>
+      <li><a href="grow.html">Grow</a></li>
+      <li><a href="Integrate.html">Integrate</a></li>
+      <li><a href="blog.html">Blog</a></li>
+
+    </div>
+
+    <div class="content">
+      <h1>
+        The Grocery ecommerce platform your  customers will love
+      </h1>
+
+
+    </div>
+  </header>
+
+
+
+  <section class="section1">
+    <div>
+      <h1>
+        From order to delivery,our Grocery
+       Solution cover all your needs
+      </h1>
+
+
+
+      <h3>
+        Pick as many solutions as you want,add more later.
+        Our solutions are flexible and easy to integrate, covering all the 
+        needs of your online supermarket store.
+      </h3>
+    </div>
+
+  </section>
+  <br><br>
+  <section class="section2">
+
+    <div class="sec2">
+
+      <img
+        src="https://images.pexels.com/photos/8422728/pexels-photo-8422728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="">
+      <p> Grocery1</p>
+
+    </div>
+
+    <div class="sec2">
+      <img
+        src="https://images.pexels.com/photos/6994261/pexels-photo-6994261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="">
+      <p> Grocery2</p>
+    </div>
+
+
+    <div class="sec2">
+      <img
+        src="https://images.pexels.com/photos/8475112/pexels-photo-8475112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="">
+      <p>Grocery3</p>
+    </div>
+
+
+  </section>
+
+  <br><br><br>
+
+  <section class="section3">
+
+    <div class="sec3">
+      <h1>
+        Bundling what you need at the same price
+      </h1>
+      <h5>
+        Our Mobile app, Grocery e-shop, and Admin panel come together at a single price,reflecting our commitment to
+        aligning fees with the actual results you achieve, as your online supermarket store grows and succeeds.
+        Integrate your entire grocery store ecommerce presence with our bundled solutions for a complete online
+        supermarket experience.
+      </h5>
+    </div>
+
+    <div class="secimg3">
+      <img
+        src="https://cdn.prod.website-files.com/63bc15b680c7e6111331c139/658e9501fdb828cf37db03c0_Bundle-laptop-p-500.png"
+        alt="">
+      <br><br>
+      <strong style="margin-left: 20px;"> GROCERY E-SHOP + MOBILE APP + ADMIN PANEL</strong>
+    </div>
+  </section>
+
+  <section class="section4">
+    <div class="sec4">
+      <h5>
+        Our features guarantee optimal customer
+        experience
+      </h5><br>
+
+      <input type="search" name="" id="" placeholder="search here">
+
+      <br><br>
+
+      <div class="sidenav">
+        <h6>Search suggestions</h6>
+
+        <p><span style="margin: 12px;"><i class="fas fa-search "></i></span>Lemons - <span
+            style="font-size: 13px;margin: 10px;">Fresh Produce</span></p>
+        <hr>
+        <p><span style="margin: 12px;"><i class="fas fa-search "></i></span>Grilled Chicken with lemon - <span
+            style="font-size: 13px;margin: 10px;">in Cold Cuts</span> </p>
+        <hr>
+        <p><span style="margin: 12px;"><i class="fas fa-search "></i></span>Grilled Chicken with lemon - <span
+            style="font-size: 13px;margin: 10px;">in Cold Cuts</span> </p>
+        <h6>Product for you</h6>
+        <p><img src="https://cdn.pixabay.com/photo/2022/03/17/10/03/lemon-7074240_1280.png" alt="" srcset="">Organic
+          lemons </p>
+        <hr>
+        <p><img src="https://cdn.pixabay.com/photo/2022/03/17/10/03/lemon-7074240_1280.png" alt="" srcset="">Lemon
+          flavour</p>
+        <hr>
+        <p><img src="https://cdn.pixabay.com/photo/2022/03/17/10/03/lemon-7074240_1280.png" alt="" srcset="">Grilled
+          chicken with lemon </p>
+      </div>
+
+    </div>
+
+    <div class="sec5">
+      <h4>Powerful search engine</h4>
+
+      <p>
+        Enable your customers to quickly find what they are looking for. Our advanced Machine Learning software tailors
+        product recommendations to your customers based on their preferences and past purchases. It intelligently
+        presents tempting offers that match your customer's search. This ensures a personalized and seamless shopping
+        experience.
+    </div>
+
+  </section>
+
+  <div class="parent">
+    <section class="section5">
+
+      <div class="productpage1">
+        <h5>Product page</h5>
+        <hr>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ868djAR5mIlAFnnjF---4paarCg48aQTr-g&s"
+                class="rounded w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ868djAR5mIlAFnnjF---4paarCg48aQTr-g&s"
+                class="rounded w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ868djAR5mIlAFnnjF---4paarCg48aQTr-g&s"
+                class="rounded w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+
+        </div>
+
+
+        <div class="down1">
+          Grana Padano Italy
+          <h5> 1,645₹ <span style="font-size: 14px;color:whitesmoke">/250g</span> </h5>
+        </div>
+
+
+        <div class="down1">
+          Product preferences <br><br>
+          <p> Select one or more options </p>
+
+          <span class="span1">
+            <p>In piece</p>
+            <p>In slices</p>
+            <p>Grated</p>
+          </span>
+        </div>
+
+        <div class="down1">
+          Any specific details to note? <i class="fa-solid fa-angle-up"></i>
+
+          <span class="span2">
+
+
+            <i class="fa-solid fa-minus"></i>
+            <p>para2</p>
+            <i class="fa-solid fa-plus"></i>
+
+
+          </span>
+
+        </div>
+      </div>
+ 
+ 
+    
+    </section>
+
+    <div class="productpage2">
+      <h1>Weighted products preferences</h1>
+  
+      <h5>Give your customers the option to purchase 
+        weighted and fresh products, exactly how they 
+        would order straight from the counters. 
+        They can specify how they want their cheese cut or 
+        how ripe they’d like their bananas, just like they 
+        would in a physical grocery store.</h5>
+    </div>
+  
+  </div>
+
+  <section class="section6">
+    <div class="map1">
+      <img src="https://cdn.prod.website-files.com/63bc15b680c7e6111331c139/6593d48d0375bb617246e6e0_admin1-p-1080.jpg"
+        alt="" srcset="">
+
+    </div>
+
+    <div class="map2">
+      <img
+        src="https://cdn.prod.website-files.com/63bc15b680c7e6111331c139/656893af6fb3903956375082_Take%20Away%20Stores%20Map%20View-p-500.jpg"
+        alt="" srcset="">
+
+    </div>
+
+
+
+  </section>
+
+
+  <section class="section7">
+    <div class="configuration">
+      <p>Store configuration</p>
+      <h5>
+        You have the flexibility to oversee all your grocery 
+        stores collectively or manage each store 
+        individually, tailoring the management approach 
+        to your specific needs. You can manage local 
+        product collections, set specific delivery zones, 
+        choose payment options, and schedule delivery 
+        timeslots for each of your stores.
+      </h5>
+    </div>
+  </section>
+
+  <h1 class="model">Our Unique Pricing Model</h1>
+
+  <section class="section8">
+
+
+    <div class="Unique1">
+
+      <img src="img/unique1.png" alt="">
+
+      <h3>Pay as you grow</h3>
+
+      <p>It's not your typical fixed or per-order 
+        fee model. We align our fees with 
+        the actual results you achieve by 
+        using our tools — a true partnership 
+        model.</p>
+
+    </div>
+
+
+
+    <div class="Unique2">
+
+
+      <img src="img/unique2.png" alt="">
+
+      <h3>No upfront costs</h3>
+
+      <p>Emphasizing our commitment to 
+        partnership, no initial payment is 
+        required. You will only begin paying 
+        when your solution goes live.</p>
+
+
+    </div>
+
+
+    <div class="Unique3">
+
+      <img src="img/unique3.png" alt="">
+
+      <h3>No hidden costs</h3>
+
+      <p>We provide dedicated daily support, 
+        offer consultations, and continuously
+        listen to your needs to create and 
+        integrate new features. All the above,
+        at no extra cost.
+
+        </p>
+
+    </div>
+  </section>
+
+
+  <section class="section9">
+
+    <div class="trust">
+      <h1>Customers trust us around the world</h1>
+      <h4>
+        We’re trusted by customers around the world, delivering solutions that evolve with their <br>
+        unique needs.
+      </h4>
+
+      <img
+        src="https://cdn.prod.website-files.com/63bc15b680c7e6111331c139/6704eacece2a207e6254333e_Map-web%400.5x-p-1600.png"
+        alt="" srcset="">
+    </div>
+  </section>
+
+  <section class="section10">
+
+    <div class="invest1">
+      <h1>
+        We are 100% invested in 
+        making grocery ecommerce 
+        solutions
+      </h1>
+
+      <h5>
+        We’re a dynamic blend of designers, engineers, and 
+        marketing experts, with specialization in the digital 
+        grocery industry. Our work is driven by innovation and 
+        creativity, all powered by the advanced technologies 
+        developed by Desquared.
+
+      </h5>
+
+      <a href="http://" style="text-decoration: none;color:green"> About us <img
+          src="img/6566182fab412ad3a4109f42_arrow-link.svg" alt="" style="width:24px;margin-left: 10px;"></a>
+    </div>
+
+    <div class="invest2">
+
+      <img
+        src="https://cdn.prod.website-files.com/63bc15b680c7e6111331c139/6593d4ac6eac1570ba53c1f0_about-img-p-1080.jpg"
+        alt="">
+    </div>
+  </section>
+
+
+  <section class="section11">
+
+    <div class="built1">
+      <h2>We have built a solid plan for a seamless start </h2>
+
+      <br><br>
+      <h5>
+        We ensure easy integration with dedicated support at every step. Get in
+        touch with us to discuss your business needs and learn more about our
+        grocery ecommerce platform, designed for your business's growth.
+      </h5>
+
+      <br><br>
+
+      
+    </div>
+
+<div class="built2">
+<button type="button">Talk with our experts</button>
+ 
+</div>
+ </section>
+  <br><br>
+
+  <div class="section12">
+    <h3 style="padding: 2pc">
+    You can always reach out to our experts at <br>
+    <a href="http://" style="color:green">mygrocery@kathirsquared.com</a>
+  </h3>
+    </div>
+
+  <br><br><br>
+  <footer>
+    <div>
+      <p><b>SOLUTIONS</b></p>
+      <li><a href="">Grocery store app development</a></li>
+      <li><a href="">Grocery ecommerce website</a></li>
+      <li><a href="">Grocery delivery software</a></li>
+      <li><a href="">Online grocery management system</a></li>
+      <li><a href="">Supermarket loyalty program</a></li>
+
+    </div>
+    
+    <div>
+      <p><b>SOLUTIONS</b></p>
+      <li><a href="">Grocery store app development</a></li>
+      <li><a href="">Grocery ecommerce website</a></li>
+      <li><a href="">Grocery delivery software</a></li>
+      <li><a href="">Online grocery management system</a></li>
+      <li><a href="">Supermarket loyalty program</a></li>
+
+    </div>
+   
+    <div>
+      <p><b>SOLUTIONS</b></p>
+      <li><a href="">Grocery store app development</a></li>
+      <li><a href="">Grocery ecommerce website</a></li>
+      <li><a href="">Grocery delivery software</a></li>
+      <li><a href="">Online grocery management system</a></li>
+      <li><a href="">Supermarket loyalty program</a></li>
+
+    </div>
+   
+    <div>
+      <p><b>SOLUTIONS</b></p>
+      <li><a href="">Grocery store app development</a></li>
+      <li><a href="">Grocery ecommerce website</a></li>
+      <li><a href="">Grocery delivery software</a></li>
+      <li><a href="">Online grocery management system</a></li>
+      <li><a href="">Supermarket loyalty program</a></li>
+
+    </div>
+
+    <div class="address">
+      <p class="para1">
+        Athens Tower A <br>
+        2-4 Mesogeion Avenue <br>
+        Athens, 11527 Greece
+      </p>
+  
+    </div>
+   
+    <div>
+      <img src="img/6566182fab412ad3a4109f42_arrow-link.svg" alt="">
+    </div>
+  </footer>
+</body>
+
+</html>
